@@ -39,6 +39,14 @@ Native **Claude Code** on Termux — no proot, no glibc-runner, powered by the B
 
 ## 📥 安装 / Installation
 
+### 0. 装前提示
+
+默认认为你已经安装了 nodejs 及其包管理器 npm 。如果没装，请你去装。  
+建议从零安装之前，先使用 npm 安装包含 cli.js 的旧版，确保 npm 能够从旧版顺利升级。  
+```bash
+npm i -g @anthropic-ai/claude-code@2.1.112
+```
+
 ### 1. 安装 Bun
 
 Termux pkg 没有官方的 Bun 包，需要手动安装 Android aarch64 版本：
