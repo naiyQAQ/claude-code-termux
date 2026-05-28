@@ -1,0 +1,19 @@
+GLIBC_2.17 {
+    global:
+        pthread_create;
+        pthread_join;
+        pthread_detach;
+        pthread_self;
+        pthread_attr_init;
+        pthread_attr_destroy;
+        pthread_attr_setstacksize;
+        pthread_key_create;
+        pthread_key_delete;
+        pthread_setspecific;
+        pthread_setname_np;
+        pthread_rwlock_rdlock;
+        pthread_rwlock_wrlock;
+        pthread_rwlock_unlock;
+    local:
+        *;
+};

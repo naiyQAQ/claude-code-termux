@@ -1,0 +1,7 @@
+GLIBC_2.17 {
+    global:
+        pow;
+        sinf;
+    local:
+        *;
+};

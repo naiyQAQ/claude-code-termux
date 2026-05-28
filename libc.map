@@ -1,0 +1,64 @@
+GLIBC_2.17 {
+    global:
+        /* Memory management */
+        malloc;
+        calloc;
+        realloc;
+        free;
+        posix_memalign;
+
+        /* String / memory ops */
+        memcpy;
+        memmove;
+        memset;
+        strlen;
+        bcmp;
+
+        /* I/O */
+        read;
+        write;
+        writev;
+        close;
+        open;
+        open64;
+        lseek64;
+        mmap64;
+        munmap;
+        pipe;
+        poll;
+        pause;
+
+        /* stdio */
+        fflush;
+        fprintf;
+        fwrite;
+        snprintf;
+
+        /* File system */
+        getcwd;
+        readlink;
+        realpath;
+
+        /* Process / system */
+        abort;
+        getenv;
+        sysconf;
+        syscall;
+        clock_gettime;
+        getauxval;
+        dl_iterate_phdr;
+        sched_getaffinity;
+
+        /* glibc-specific wrappers */
+        __errno_location;
+        __fxstat64;
+        __xstat64;
+        __xpg_strerror_r;
+        __cxa_thread_atexit_impl;
+
+        /* data symbol */
+        stderr;
+
+    local:
+        *;
+};
